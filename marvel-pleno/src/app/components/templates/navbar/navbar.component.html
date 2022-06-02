@@ -1,0 +1,19 @@
+<div class="navbar__container">
+    <div class="navbar__content">
+        <div class="navbar__content-logo">
+            <a routerLink="/home">
+                <img class="navbar__logo" src="assets/imgs/logo-marvel.svg" alt="">
+            </a>
+                
+        </div>
+        <div class="navbar__content-menu">
+            <ul class="navbar__menu">
+                <li *ngFor="let item of listItem">
+                    <a routerLink="{{item.route}}">
+                        {{item.option}}
+                    </a>    
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
