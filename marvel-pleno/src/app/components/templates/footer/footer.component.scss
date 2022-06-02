@@ -1,0 +1,19 @@
+.footer__container {
+    background-color: var( --background-dark);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer__content {
+    padding: 0 24px;
+    margin-bottom: 16px;
+}
+
+.footer__content a {
+    color: #999999;
+}

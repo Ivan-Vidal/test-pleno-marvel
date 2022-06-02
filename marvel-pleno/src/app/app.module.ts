@@ -10,6 +10,7 @@ import { EventsComponent } from './components/views/events/events.component';
 import { ComicsComponent } from './components/views/comics/comics.component';
 import { SeriesComponent } from './components/views/series/series.component';
 import { PageNotFoundComponent } from './components/views/page-not-found/page-not-found.component';
+import { FooterComponent } from './components/templates/footer/footer.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { PageNotFoundComponent } from './components/views/page-not-found/page-no
     EventsComponent,
     ComicsComponent,
     SeriesComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
