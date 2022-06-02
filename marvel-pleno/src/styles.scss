@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+:root {
+    --background-dark: #202020;
+    --background: #f0f2f5;
+    --link-hover: #F0141E;
+
+}
+
+html {
+    font-family: Roboto, sans-serif;
+    background-color: var(--background);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
