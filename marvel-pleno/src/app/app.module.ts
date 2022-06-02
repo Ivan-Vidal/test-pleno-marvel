@@ -6,13 +6,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { NavbarComponent } from './components/templates/navbar/navbar.component';
+import { EventsComponent } from './components/views/events/events.component';
+import { ComicsComponent } from './components/views/comics/comics.component';
+import { SeriesComponent } from './components/views/series/series.component';
+import { PageNotFoundComponent } from './components/views/page-not-found/page-not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    EventsComponent,
+    ComicsComponent,
+    SeriesComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
