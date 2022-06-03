@@ -1,3 +1,26 @@
+<div class="home__container"
+    infinite-scroll  
+    [scrollWindow]="false"
+    (scrolled)="onScrollDown($event)" 
+    (scrolledUp)="onScrollUp($event)"> 
 
+    <div class="home__content-title">
+        <h1 class="home__title">Personagens Marvel</h1>
+    </div>
+    <hr class="home__divider">
 
-<h1>Hello World</h1>
+    <div class="home__content-cards">
+        <div class="card__container" *ngFor="let item of allData">
+            <header class="card__content-img">
+                <img class="card__img" src="{{item.thumbnail.path}}.{{item.thumbnail.extension}}" alt="">
+            </header>
+            <span>{{ item.name}}</span>
+            <div>
+                <button>
+                    Detalhes
+                </button>
+            </div>
+        </div>
+    </div>
+        
+</div>

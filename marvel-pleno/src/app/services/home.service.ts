@@ -17,6 +17,6 @@ export class HomeService {
   constructor(private readonly http: HttpClient) { }
 
   public getAllComics()  {
-    return this.http.get<any>(`${environment.baseUrl}:443/v1/public/characters?` + this.params).pipe(take(1));
+    return this.http.get<any>(`${environment.baseUrl}:443/v1/public/characters?` + this.params + `&limit=100`).pipe(take(1));
   }
 }

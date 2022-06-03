@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
+
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { NavbarComponent } from './components/templates/navbar/navbar.component';
@@ -27,7 +30,8 @@ import { FooterComponent } from './components/templates/footer/footer.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    InfiniteScrollModule
     
   ],
   providers: [],
