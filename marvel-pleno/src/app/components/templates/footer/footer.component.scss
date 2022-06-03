@@ -1,12 +1,11 @@
 .footer__container {
     background-color: var( --background-dark);
-    position: absolute;
-    bottom: 0px;
     width: 100%;
     height: 56px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin-top: 56px;
 }
 
 .footer__content {
