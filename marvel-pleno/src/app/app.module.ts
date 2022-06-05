@@ -14,6 +14,7 @@ import { ComicsComponent } from './components/views/comics/comics.component';
 import { SeriesComponent } from './components/views/series/series.component';
 import { PageNotFoundComponent } from './components/views/page-not-found/page-not-found.component';
 import { FooterComponent } from './components/templates/footer/footer.component';
+import { CardComponent } from './components/templates/card/card.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { FooterComponent } from './components/templates/footer/footer.component'
     ComicsComponent,
     SeriesComponent,
     PageNotFoundComponent,
-    FooterComponent
+    FooterComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

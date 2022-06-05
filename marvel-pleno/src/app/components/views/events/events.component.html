@@ -1,1 +1,20 @@
-<p>events works!</p>
+<div class="events__container"> 
+
+    <div class="events__content-title">
+        <h1 class="events__title">Eventos Marvel</h1>
+    </div>
+    <hr class="events__divider">
+
+    <div class="events__content-cards">
+        <div *ngFor="let item of allData">
+            <app-card 
+                [path]="item.thumbnail.path"
+                [extension]="item.thumbnail.extension"
+                [name]="item.fullName"
+                [type]="'events'"
+            ></app-card>
+        </div>
+        
+    </div>
+        
+</div>

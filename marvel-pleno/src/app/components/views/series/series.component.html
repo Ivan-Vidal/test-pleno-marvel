@@ -1,1 +1,20 @@
-<p>series works!</p>
+<div class="series__container"> 
+
+    <div class="series__content-title">
+        <h1 class="series__title">Series Marvel</h1>
+    </div>
+    <hr class="series__divider">
+
+    <div class="series__content-cards">
+        <div *ngFor="let item of allData">
+            <app-card 
+                [path]="item.thumbnail.path"
+                [extension]="item.thumbnail.extension"
+                [name]="item.title"
+                [type]="'series'"
+            ></app-card>
+        </div>
+        
+    </div>
+        
+</div>

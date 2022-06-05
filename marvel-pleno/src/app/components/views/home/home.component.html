@@ -6,17 +6,15 @@
     <hr class="home__divider">
 
     <div class="home__content-cards">
-        <div class="card__container" *ngFor="let item of allData">
-            <header class="card__content-img">
-                <img class="card__img" src="{{item.thumbnail.path}}.{{item.thumbnail.extension}}" alt="">
-            </header>
-            <span>{{ item.name}}</span>
-            <div>
-                <button>
-                    Detalhes
-                </button>
-            </div>
+        <div *ngFor="let item of allData">
+            <app-card 
+                [path]="item.thumbnail.path"
+                [extension]="item.thumbnail.extension"
+                [name]="item.name"
+                [type]="'characters'"
+            ></app-card>
         </div>
+        
     </div>
         
 </div>

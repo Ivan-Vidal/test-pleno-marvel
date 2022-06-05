@@ -17,6 +17,6 @@ export class EventsService {
   constructor(private readonly http: HttpClient) { }
 
   public getAllEvents()  {
-    return this.http.get<any>(`${environment.baseUrl}:443/v1/public/events?` + this.params + `&limit=100`).pipe(take(1));
+    return this.http.get<any>(`${environment.baseUrl}:443/v1/public/creators?` + this.params + `&limit=100`).pipe(take(1));
   }
 }
