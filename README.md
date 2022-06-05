@@ -6,7 +6,26 @@
 
 # Teste Marvel
 
-## 📖Sobre
+---
+
+
+## 🎬 Veja rodando ao vivo!
+
+Veja em [Ao vivo]()
+
+
+---
+
+
+## 🏁Objetivo
+A proposta do projeto, é desenvolver uma aplicação com pelo menos 3 rotas com o framework Angular 10+, consumindo os dados da [API MARVEL](https://developer.marvel.com/).
+
+---
+
+
+## 📖Sobre 
+- Projeto desenvolvido para avaliar meus conhecimento e aprimorar habilidades.
+
 
 
 ---
