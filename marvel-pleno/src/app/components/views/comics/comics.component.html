@@ -1,1 +1,20 @@
-<p>comics works!</p>
+<div class="comics__container"> 
+
+    <div class="comics__content-title">
+        <h1 class="comics__title">Histórias em quadrinhos Marvel</h1>
+    </div>
+    <hr class="comics__divider">
+
+    <div class="comics__content-cards">
+        <div *ngFor="let item of allData">
+            <app-card 
+                [path]="item.thumbnail.path"
+                [extension]="item.thumbnail.extension"
+                [name]="item.title"
+                [type]="'comics'"
+    ></app-card>
+        </div>
+        
+    </div>
+        
+</div>

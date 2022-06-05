@@ -1,0 +1,33 @@
+.page-not__container {
+    width: 100%;
+    text-align: center;
+}
+
+.page-not__content {
+    padding: 0 24px;
+}
+
+.page-not__content-descriptions {
+    margin: 26px  0 16px 0;
+    font-size: 20px;
+}
+
+.page-not__content-img {
+    
+}
+
+.page-not__img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.page-not__button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--background-dark);
+    color: #fff;
+    width: 100%;
+    max-width: 375px;
+    margin: autoo;
+}

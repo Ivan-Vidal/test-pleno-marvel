@@ -7,16 +7,16 @@ import * as md5 from 'md5'
 @Injectable({
   providedIn: 'root'
 })
-export class HomeService {
+export class SeriesService {
 
   params = new HttpParams()
-    .set('apikey', environment.public_key)
-    .set('ts', Number( new Date()))
-    .set('hash', md5(Number( new Date()) + environment.private_key + environment.public_key))
+  .set('apikey', environment.public_key)
+  .set('ts', Number( new Date()))
+  .set('hash', md5(Number( new Date()) + environment.private_key + environment.public_key))
 
   constructor(private readonly http: HttpClient) { }
 
-  public getAllCharacters()  {
-    return this.http.get<any>(`${environment.baseUrl}:443/v1/public/characters?` + this.params + `&limit=100`).pipe(take(1));
+  public getAllSeries()  {
+    return this.http.get<any>(`${environment.baseUrl}:443/v1/public/series?` + this.params + `&limit=100`).pipe(take(1));
   }
 }

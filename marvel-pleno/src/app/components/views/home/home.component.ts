@@ -10,15 +10,16 @@ export class HomeComponent implements OnInit {
 
   allData: any
 
-  constructor(private homeService: HomeService) { }
 
-  ngOnInit(): void {
+  constructor(private homeService: HomeService) { 
+  }
 
-     this.homeService.getAllComics().subscribe((result) => {
+   ngOnInit(): void {
+     this.homeService.getAllCharacters().subscribe((result) => {
+      this.allData = result.data.results
       console.log(result)
     })
 
-    
   }
 
 }

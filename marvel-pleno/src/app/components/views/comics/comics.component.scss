@@ -1,0 +1,49 @@
+.comics__container {
+    // margin: 40px;
+    height: 100%;
+    // width: 500px;
+    overflow: auto;
+}
+
+.comics__content-cards {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+    padding: 0 24px;
+}
+
+.comics__content-title {
+   text-align: left;
+   margin-left: 26px;
+}
+
+.comics__divider {
+    width: 95%;
+}
+
+@media(max-width: 708px) {
+    .comics__content-cards {
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comics__divider {
+        width: 90%;
+    }
+
+    .comics__content-title {
+        text-align: center;
+    }
+}
+
+@media(min-width: 1080px) {
+    .comics__content-cards {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        padding: 0 24px;
+    }
+}

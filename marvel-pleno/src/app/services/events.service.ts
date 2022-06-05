@@ -7,7 +7,7 @@ import * as md5 from 'md5'
 @Injectable({
   providedIn: 'root'
 })
-export class HomeService {
+export class EventsService {
 
   params = new HttpParams()
     .set('apikey', environment.public_key)
@@ -16,7 +16,7 @@ export class HomeService {
 
   constructor(private readonly http: HttpClient) { }
 
-  public getAllCharacters()  {
-    return this.http.get<any>(`${environment.baseUrl}:443/v1/public/characters?` + this.params + `&limit=100`).pipe(take(1));
+  public getAllEvents()  {
+    return this.http.get<any>(`${environment.baseUrl}:443/v1/public/creators?` + this.params + `&limit=100`).pipe(take(1));
   }
 }

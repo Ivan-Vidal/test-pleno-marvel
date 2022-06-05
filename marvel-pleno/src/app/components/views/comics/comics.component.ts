@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComicsService } from 'src/app/services/comics.service';
 
 @Component({
   selector: 'app-comics',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComicsComponent implements OnInit {
 
-  constructor() { }
+  allData: any
 
-  ngOnInit(): void {
+
+  constructor(private comicsService: ComicsService) { 
   }
 
+   ngOnInit(): void {
+     this.comicsService.getAllComics().subscribe((result) => {
+      this.allData = result.data.results
+      console.log(result)
+    })
+
+  }
 }

@@ -1,3 +1,20 @@
+<div class="home__container"> 
 
+    <div class="home__content-title">
+        <h1 class="home__title">Personagens Marvel</h1>
+    </div>
+    <hr class="home__divider">
 
-<h1>Hello World</h1>
+    <div class="home__content-cards">
+        <div *ngFor="let item of allData">
+            <app-card 
+                [path]="item.thumbnail.path"
+                [extension]="item.thumbnail.extension"
+                [name]="item.name"
+                [type]="'characters'"
+            ></app-card>
+        </div>
+        
+    </div>
+        
+</div>

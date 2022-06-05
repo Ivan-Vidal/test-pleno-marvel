@@ -1,0 +1,44 @@
+<div class="card__container" *ngIf="type === 'characters'">
+    <div class="card__content">
+        <header class="card__content-img">
+            <img class="card__img" src="{{path}}.{{extension}}" alt="{{name}}">
+        </header>
+        <div class="card__content-name">
+            <span class="card__name">{{ name}}</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="card__container" *ngIf="type === 'comics'">
+    <div class="card__content">
+        <header class="card__content-img">
+            <img class="card__img" src="{{path}}.{{extension}}" alt="{{name}}">
+        </header>
+        <div class="card__content-name">
+            <span class="card__name">{{ name}}</span>
+        </div>
+    </div>
+</div>
+
+<div class="card__container" *ngIf="type === 'events'">
+    <div class="card__content">
+        <header class="card__content-img">
+            <img class="card__img" src="{{path}}.{{extension}}" alt="{{name}}">
+        </header>
+        <div class="card__content-name">
+            <span class="card__name">{{ name}}</span>
+        </div>
+    </div>
+</div>
+
+<div class="card__container" *ngIf="type === 'series'">
+    <div class="card__content">
+        <header class="card__content-img">
+            <img class="card__img" src="{{path}}.{{extension}}" alt="{{name}}">
+        </header>
+        <div class="card__content-name">
+            <span class="card__name">{{ name}}</span>
+        </div>
+    </div>
+</div>
