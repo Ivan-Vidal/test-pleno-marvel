@@ -4,14 +4,14 @@
   </a>
 </div>
 
-# Teste Marvel
+# Teste Marvel Pleno
 
 ---
 
 
 ## 🎬 Veja rodando ao vivo!
 
-Veja em [Ao vivo]()
+Veja em [Ao vivo](https://test-pleno-marvel.vercel.app/home)
 
 
 ---
